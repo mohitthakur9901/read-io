@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import { Home, BookOpen, BrainCircuit, Library, PenTool, Settings, UserCircle } from 'lucide-react';
 
 interface SidebarProps {

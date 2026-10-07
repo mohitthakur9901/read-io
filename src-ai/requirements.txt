@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+sqlalchemy
+psycopg2-binary
+pgvector
+langgraph
+llama-index
+sentence-transformers
+ollama
+pymupdf

@@ -122,3 +122,35 @@ PyMuPDF
 
 
 
+
+                    Read.io Desktop
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+        React/TypeScript        Tauri/Rust
+              │                     │
+              │                     ├── Filesystem
+              │                     ├── Native APIs
+              │                     └── Desktop integration
+              │
+              ▼
+        Backend / API
+       Node.js + TypeScript
+              │
+          Prisma ORM
+              │
+              ▼
+        PostgreSQL
+              │
+       ┌──────┴──────┐
+       │             │
+    pgvector       relational
+       │             │
+       └──────┬──────┘
+              │
+              ▼
+         Python AI
+              │
+       ┌──────┼──────┐
+       │      │      │
+      NLP    RAG    LLM

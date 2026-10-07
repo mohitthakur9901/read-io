@@ -20,8 +20,8 @@ function App() {
       <main className="flex-1 h-full overflow-hidden flex flex-col relative">
         {currentView === "library" && <Library setCurrentView={setCurrentView} />}
         {currentView === "reader" && <Reader setCurrentView={setCurrentView} />}
-        {currentView === "notes" && <Notes setCurrentView={setCurrentView} />}
-        {currentView === "settings" && <Settings setCurrentView={setCurrentView} />}
+        {currentView === "notes" && <Notes />}
+        {currentView === "settings" && <Settings />}
         
         {/* Placeholders for MVP missing screens */}
         {currentView === "ai-tutor" && <div className="p-10 flex-1 flex items-center justify-center text-muted-foreground">AI Tutor Page</div>}

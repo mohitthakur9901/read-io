@@ -1,13 +1,9 @@
-interface SettingsProps {
-  setCurrentView: (view: string) => void;
-}
-
-export function Settings({ setCurrentView }: SettingsProps) {
+export function Settings() {
   return (
     <div className="flex-1 h-full overflow-y-auto bg-background p-10">
       <div className="max-w-2xl mx-auto space-y-10">
         <header>
-          <h1 className="text-3xl font-semibold tracking-tight text-foreground mb-2">Settings</h1>
+          <h1 className="text-3xl font-semibold tracking-tight text-foreground mb-2">Settings </h1>
           <p className="text-muted-foreground text-lg">Manage your reading experience and AI preferences.</p>
         </header>
 

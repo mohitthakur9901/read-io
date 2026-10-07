@@ -1,4 +1,4 @@
-import { Sparkles, X, ChevronRight, BookmarkPlus, HelpCircle } from "lucide-react";
+import { Sparkles, X, ChevronRight} from "lucide-react";
 
 interface AITutorPanelProps {
   onClose: () => void;
