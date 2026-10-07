@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base dark mode for Read.io */
+    --background: 225 7% 11%;
+    --foreground: 40 23% 93%;
+    
+    --card: 225 6% 13%;
+    --card-foreground: 40 23% 93%;
+    
+    --popover: 225 6% 13%;
+    --popover-foreground: 40 23% 93%;
+    
+    --primary: 238 81% 67%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 225 6% 17%;
+    --secondary-foreground: 40 23% 93%;
+    
+    --muted: 225 6% 17%;
+    --muted-foreground: 215 14% 65%;
+    
+    --accent: 238 81% 67%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 225 6% 20%;
+    --input: 225 6% 20%;
+    --ring: 238 81% 67%;
+    
+    --radius: 0.5rem;
+  }
+
+  .light {
+    --background: 40 23% 97%;
+    --foreground: 225 7% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 225 7% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 7% 11%;
+    --primary: 238 81% 67%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 10% 90%;
+    --secondary-foreground: 225 7% 11%;
+    --muted: 40 10% 90%;
+    --muted-foreground: 215 14% 45%;
+    --accent: 238 81% 67%;
+    --accent-foreground: 0 0% 100%;
+    --border: 40 10% 85%;
+    --input: 40 10% 85%;
+    --ring: 238 81% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .reading-font {
+    font-family: "Georgia", "Merriweather", "Times New Roman", serif;
+  }
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.45);
+}
